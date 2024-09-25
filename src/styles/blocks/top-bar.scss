@@ -1,0 +1,52 @@
+.top-bar {
+  padding-block: 1.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include onTablet {
+    padding-block: 2rem;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  &__logo-link {
+    display: flex;
+  }
+
+  &__logo {
+    height: 1rem;
+
+    @include hover(transform, scale(1.2));
+
+    @include onTablet {
+      height: 1.5rem;
+    }
+  }
+
+  &__phone-number {
+    display: none;
+    color: $main-text-color;
+    align-items: center;
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1rem;
+    letter-spacing: 2px;
+    animation: smoothAppear $effectDuration;
+  }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+
+    &:hover &-number {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.section-title {
+  margin: 0;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: -1.5px;
+
+  @include onTablet {
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+  }
+
+  @include onDesktop {
+    font-size: 3rem;
+  }
+
+  &--align-left {
+    text-align: left;
+  }
+}

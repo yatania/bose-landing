@@ -1,0 +1,26 @@
+.main {
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+
+  margin-bottom: $mobile-footer-height;
+
+  @include onTablet {
+    margin-bottom: $tablet-footer-height;
+  }
+
+  @include onDesktop {
+    margin-bottom: $desktop-footer-height;
+  }
+
+  &__content {
+    display: grid;
+    gap: 6rem;
+    padding-block: 6rem;
+
+    @include onTablet {
+      padding-block: 7.5rem;
+      row-gap: 7.5rem;
+    }
+  }
+}
