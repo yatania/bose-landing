@@ -10,6 +10,7 @@
   &__body {
     margin: 0;
     min-width: 20rem;
+    overflow-x: hidden;
   }
   &__menu {
     position: fixed;

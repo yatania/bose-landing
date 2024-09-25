@@ -1,9 +1,11 @@
 .footer {
   background-image: url(../images/footer.png);
   background-size: cover;
+  background-position: center;
   position: fixed;
   bottom: 0;
   left: 0;
+  min-width: 20rem;
   width: 100%;
   height: $mobile-footer-height;
   z-index: -1;
